@@ -1,1 +1,2 @@
 Este archivo fue modificado desde github
+Este archivo fue modificado desde el repositorio local
