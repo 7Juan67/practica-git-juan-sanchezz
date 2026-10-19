@@ -1,0 +1,46 @@
+# El metodo .sorted()
+
+"""
+   La herramienta .sorted(), se usa para tomar cualquier iterable (lista, tuples, cadenas 
+   y diccionarios) y devuelve una nueva lista con sus elementos ordenados, su caracteristica
+   principal es que no modifica permanentemente los datos originales de la lista
+   si no que solo crea una copia ordenada, en palabras alfabeticamente y en numero los ordena
+    del mayor al menor.
+"""
+
+# Ordenar numeros
+numeros = [5, 2, 3, 1, 4]
+print(numeros)
+print("\n \t Ahora usando el .sorted()")
+print(sorted(numeros))
+numeros_1 = [4, 3, 1, 5, 9]
+print(sorted(numeros_1))
+
+# Usando el reverse=True en orden se invierte de mayor a menor o de la Z a la A
+numeros_2 = [250, 900, 50, 150]
+numeros_decendentes = sorted(numeros_2, reverse=True)
+print(numeros_decendentes)
+
+# Ordenar una cadena de texto
+message = "charly es el mejor"
+print("\n \t Ordenando cadena de texto")
+print(sorted(message))
+
+# Usando el parametro key
+"""
+   El key es el parametro mas poderoso, acepta una funcion
+   de un solo argumento que se aplica a cada elemento antes
+   de hacer la comparacion. En lugar de ordenar por el valor
+   dirceto python ordena por el valor que devuelve esta funcion.
+"""
+
+# Ordea basandose en la cantidad de caracteres de cada palabra
+futeria = ["uva", "manzana", "sandia", "frambuesa"]
+por_longitud = sorted(futeria, key=len)
+print(por_longitud)
+
+# Diferencia entre .sorted(lista) y lista.sort().
+"""
+   sorted(lista): Funciona con cualquier iterable. Crea una lista nueva y deja la original intacta.
+   lista.sort(): Funciona solo con listas. Modifica la lista original directamente.
+"""
