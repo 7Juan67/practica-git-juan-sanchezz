@@ -1,4 +1,3 @@
-# STUDENT INFORMATION / PORTADA
 """
 Student Name: Juan Jassiel Sanchez Melendez
 Student ID (Matricula): 2630209
