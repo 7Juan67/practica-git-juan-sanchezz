@@ -12,8 +12,12 @@ try:
     weight = float(weight_txt)
     height = float(height_txt)
     imc = weight / (height ** 2)
-except:
-    print("datos lo validos")
-    raise SystemExit(1)
+    print(f"TU indice de masa corporal es {imc}")
+except ValueError:
+    print("Datos no validos Ej, peso 70.5, altura 1.75")
+except ZeroDivisionError:
+    print("La altura debe ser diferente de cero")
+except Exception:
+    print(Exception)
 
 print(f"TU indice de masa corporal es {imc}")
